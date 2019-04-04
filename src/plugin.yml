@@ -1,0 +1,15 @@
+name: CronusCore
+version: 1.0
+description: Dedicated core for CronusPvP
+main: mc.wroyce.cronuscore.Core
+author: wroyce
+
+commands:
+  cronuscore:
+    permission: cronuscore.admin
+    aliases: [ccore, cc]
+
+permissions:
+  cronuscore.admin:
+    default: op
+    description: Permission to allow the user to use admin commands

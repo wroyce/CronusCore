@@ -1,0 +1,34 @@
+general:
+  reload: '&a[!] Configuration reloaded.'
+  no-permission: '&c[!] No Permission'
+
+Wither-disabled-worlds:
+  - example
+
+# Permissions:
+# - cronuscore.nether.water.<worldname> OR cronuscore.netherwater.all
+# - cronuscore.netherwater.bypass
+nether-water:
+  disabled:
+    - someworld
+
+#The radius in which the sponge will soak
+sponge-radius: 3
+
+# https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/enchantments/Enchantment.html
+# eg. DURABILITY:1
+BlockedEnchants:
+  - example
+
+# Alerts
+Faction-Alerts:
+  Enabled: true
+  Joined: "&f(&4!&f) &2&l%Player% &ahas just logged in!"
+  Left: "&f(&4!&f) &4&l%Player% &chas just logged out!"
+
+Discord:
+  - '&8&l&m|---------[&e&nDiscord&8&l&m]---------|'
+  - ' '
+  - '        &e&ninsert-link-here'
+  - ' '
+  - '&8&l&m|---------[&e&nDiscord&8&l&m]---------|'
