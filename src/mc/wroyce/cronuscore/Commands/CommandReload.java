@@ -17,9 +17,9 @@ public class CommandReload implements CommandExecutor {
                 }
                 if (args[0].equalsIgnoreCase("reload") && sender.hasPermission("cronuscore.admin")) {
                     Core.getInstance().reloadConfig();
-                    sender.sendMessage(Color.toColor("&a[!] Configuration reloaded."));
+                    sender.sendMessage(Color.toColor(Core.getInstance().getConfig().getString("Reload")));
                 } else {
-                    sender.sendMessage(Color.toColor("&c[!] No Permission"));
+                    sender.sendMessage(Color.toColor(Core.getInstance().getConfig().getString("No-Permission")));
                 }
             } catch (IndexOutOfBoundsException ex) {
             }

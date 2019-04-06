@@ -13,13 +13,12 @@ import org.bukkit.event.player.PlayerQuitEvent;
 
 public class FactionAlerts implements Listener {
     @EventHandler
-    public void facMemberLeaves(PlayerQuitEvent e)
-    {
+    public void facMemberLeaves(PlayerQuitEvent e) {
         Faction fac = null;
         Player player = e.getPlayer();
         FPlayer fplayer = FPlayers.getInstance().getByPlayer(e.getPlayer());
         fac = fplayer.getFaction();
-        if ((Core.getInstance().getConfig().getBoolean("Faction-Alerts.Enabled")) && (fplayer.hasFaction())) {
+        if ((Core.getInstance().getConfig().getBoolean("FactionAlerts")) && (fplayer.hasFaction())) {
             for (Player fmembers : fac.getOnlinePlayers()) {
                 fmembers.sendMessage(Color.toColor(Core.getInstance().getConfig().getString("Faction-Alerts.Left")
                         .replaceAll("%Player%", player.getName())
@@ -34,7 +33,7 @@ public class FactionAlerts implements Listener {
         Player player = e.getPlayer();
         FPlayer fplayer = FPlayers.getInstance().getByPlayer(e.getPlayer());
         fac = fplayer.getFaction();
-        if ((Core.getInstance().getConfig().getBoolean("Faction-Alerts.Enabled")) && (fplayer.hasFaction())) {
+        if ((Core.getInstance().getConfig().getBoolean("FactionAlerts")) && (fplayer.hasFaction())) {
             for (Player fmembers : fac.getOnlinePlayers()) {
                 fmembers.sendMessage(Color.toColor(Core.getInstance().getConfig().getString("Faction-Alerts.Joined")
                         .replaceAll("%Player%", player.getName())

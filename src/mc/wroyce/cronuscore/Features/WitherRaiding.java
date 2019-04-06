@@ -4,7 +4,6 @@ package mc.wroyce.cronuscore.Features;
 import java.util.List;
 
 import mc.wroyce.cronuscore.Core;
-import mc.wroyce.cronuscore.Util.Utilities;
 import org.bukkit.entity.EntityType;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;

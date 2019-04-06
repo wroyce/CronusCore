@@ -8,6 +8,8 @@ commands:
   cronuscore:
     permission: cronuscore.admin
     aliases: [ccore, cc]
+  uuid:
+    permission: cronuscore.admin
 
 permissions:
   cronuscore.admin:

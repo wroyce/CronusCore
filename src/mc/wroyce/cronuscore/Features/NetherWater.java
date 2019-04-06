@@ -25,7 +25,7 @@ public class NetherWater implements Listener {
     }
 
     public List<String> getDisabledWorlds() {
-        disabledWorlds = Core.getInstance().getConfig().getStringList("Nether-Water.disabled");
+        disabledWorlds = Core.getInstance().getConfig().getStringList("Nether-Water-disabled");
         return disabledWorlds;
     }
 

@@ -4,8 +4,7 @@ import org.bukkit.command.CommandSender;
 
 public class Color {
 
-    public static String toColor(String message)
-    {
+    public static String toColor(String message) {
         message = message.replaceAll("&", "§");
         return message;
     }

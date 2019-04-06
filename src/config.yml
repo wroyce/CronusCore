@@ -1,16 +1,37 @@
-general:
-  reload: '&a[!] Configuration reloaded.'
-  no-permission: '&c[!] No Permission'
+#=================================#
+#            CronusCore           #
+#       Developed by: wroyce      #
+#=================================#
+# Usage:                          #
+#                                 #
+# Nether Water:                   #
+# cronuscore.netherwater.<world>  #
+# cronuscore.netherwater.all      #
+# cronuscore.netherwater.bypass   #
+#                                 #
+# Admin Commands                  #
+# cronuscore.admin                #
+#=================================#
 
+# You can choose if a command / feature is enable or disabled here (true/false)
+discord: true
+reload: true
+uuid: true
+FactionAlerts: true
+
+# Sent to players who use /cc reload
+Reload: '&a[!] Configuration reloaded.'
+
+# Sent to players who don't have permission
+No-Permission: '&c[!] No Permission'
+
+# Worlds the wither is disabled in
 Wither-disabled-worlds:
   - example
 
-# Permissions:
-# - cronuscore.nether.water.<worldname> OR cronuscore.netherwater.all
-# - cronuscore.netherwater.bypass
-nether-water:
-  disabled:
-    - someworld
+# Nether worlds that water is disabled in
+nether-water-disabled:
+  - someworld
 
 #The radius in which the sponge will soak
 sponge-radius: 3
@@ -20,15 +41,19 @@ sponge-radius: 3
 BlockedEnchants:
   - example
 
-# Alerts
+# Sent to those who are in a faction
 Faction-Alerts:
-  Enabled: true
   Joined: "&f(&4!&f) &2&l%Player% &ahas just logged in!"
   Left: "&f(&4!&f) &4&l%Player% &chas just logged out!"
 
+# Sent to players who do /discord
 Discord:
   - '&8&l&m|---------[&e&nDiscord&8&l&m]---------|'
   - ' '
   - '        &e&ninsert-link-here'
   - ' '
   - '&8&l&m|---------[&e&nDiscord&8&l&m]---------|'
+
+UUID:
+  Self: '&cYour UUID: &8%UUID%'
+  Target: "&c%Target%'s UUID: &8%TargetUUID%"
