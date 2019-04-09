@@ -3,8 +3,10 @@ package mc.wroyce.cronuscore;
 import com.sk89q.worldguard.bukkit.WorldGuardPlugin;
 import mc.wroyce.cronuscore.Commands.CommandChats;
 import mc.wroyce.cronuscore.Commands.CommandReload;
+import mc.wroyce.cronuscore.Commands.CommandWarp;
 import mc.wroyce.cronuscore.Commands.uuid;
 import mc.wroyce.cronuscore.Features.*;
+import mc.wroyce.cronuscore.Listeners.WarpListener;
 import net.milkbowl.vault.economy.Economy;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.Plugin;
@@ -59,7 +61,8 @@ public class Core extends JavaPlugin {
                 new FactionAlerts(),
                 new CommandChats(),
                 new WitherRaiding(),
-                new uuid()
+                new uuid(),
+                new WarpListener()
         };
         for (Listener listener : listeners) {
             getServer().getPluginManager().registerEvents(listener, this);
@@ -69,6 +72,7 @@ public class Core extends JavaPlugin {
     public void registerCommands() {
         getCommand("cronuscore").setExecutor(new CommandReload());
         getCommand("uuid").setExecutor(new uuid());
+        getCommand("warp").setExecutor(new CommandWarp());
     }
 
     private WorldGuardPlugin getWorldGuard() {

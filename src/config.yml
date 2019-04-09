@@ -57,3 +57,8 @@ Discord:
 UUID:
   Self: '&cYour UUID: &8%UUID%'
   Target: "&c%Target%'s UUID: &8%TargetUUID%"
+
+GUI:
+  Warp:
+    Title: "&6Warp List"
+    Size: 45

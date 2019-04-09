@@ -10,8 +10,13 @@ commands:
     aliases: [ccore, cc]
   uuid:
     permission: cronuscore.admin
+  warp:
+    permission: cronuscore.warp
 
 permissions:
   cronuscore.admin:
     default: op
     description: Permission to allow the user to use admin commands
+  cronuscore.warp:
+    default: op
+    description: Permission to use the warp gui
