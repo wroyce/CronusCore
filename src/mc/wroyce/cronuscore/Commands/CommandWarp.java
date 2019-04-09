@@ -18,6 +18,11 @@ public class CommandWarp implements CommandExecutor {
     int size = Core.getInstance().getConfig().getInt("GUI.Warp.Size");
     public static String title = Color.toColor(Core.getInstance().getConfig().getString("GUI.Warp.Title"));
 
+    int CrateSlot = Core.getInstance().getConfig().getInt("GUI.Warp.Items.Crates.Slot");
+    int NetherSlot = Core.getInstance().getConfig().getInt("GUI.Warp.Items.Nether.Slot");
+    int EndSlot = Core.getInstance().getConfig().getInt("GUI.Warp.Items.End.Slot");
+    int WastelandsSlot = Core.getInstance().getConfig().getInt("GUI.Warp.Items.Wastelands.Slot");
+
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         if (!(sender instanceof Player) || (!sender.hasPermission("cronuscore.warp"))) {
             sender.sendMessage(Color.toColor(Core.getInstance().getConfig().getString("No-Permission")));
@@ -33,10 +38,10 @@ public class CommandWarp implements CommandExecutor {
                 inventory.setItem(i, background);
             }
 
-            inventory.setItem(11, WarpItems.NetherWarp);
-            inventory.setItem(13, WarpItems.EndWarp);
-            inventory.setItem(15, WarpItems.Battlefield);
-            inventory.setItem(30, WarpItems.CrateWarp);
+            inventory.setItem(NetherSlot, WarpItems.NetherWarp);
+            inventory.setItem(EndSlot, WarpItems.EndWarp);
+            inventory.setItem(WastelandsSlot, WarpItems.Wastelands);
+            inventory.setItem(CrateSlot, WarpItems.CrateWarp);
             inventory.setItem(32, WarpItems.Soon);
 
         }

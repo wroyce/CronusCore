@@ -62,3 +62,67 @@ GUI:
   Warp:
     Title: "&6Warp List"
     Size: 45
+    Items:
+      Nether:
+        Name: "&cNether"
+        Command: "sudo %player% ewarp nether"
+        Slot: 11
+      Wastelands:
+        Name: "&2Wastelands"
+        Command: "sudo %player% ewarp wastelands"
+        Slot: 13
+      End:
+        Name: "&eEnd"
+        Command: "sudo %player% ewarp end"
+        Slot: 15
+      Crates:
+        Name: "&bCrates"
+        Command: "sudo %player% ewarp crates"
+        Slot: 30
+
+  Kits:
+    Shazam:
+      Name: "&bShazam"
+      Slot: 0
+      Locked-Lore:
+        - ''
+        - ''
+      Unlocked:
+        - ''
+        - ''
+    Jafar:
+      Name: "&eJafar"
+      Slot: 1
+      Locked-Lore:
+        - ''
+        - ''
+        Unlocked:
+          - ''
+          - ''
+    Sauron:
+      Name: "&aSauron"
+      Slot: 2
+      Locked-Lore:
+        - ''
+        - ''
+        Unlocked:
+          - ''
+          - ''
+    Merlin:
+      name: "&cMerlin"
+      Slot: 3
+      Locked-Lore:
+        - ''
+        - ''
+        Unlocked:
+          - ''
+          - ''
+    Gandalf:
+      Name: "&6Gandalf"
+      Slot: 4
+      Locked-Lore:
+        - ''
+        - ''
+        Unlocked:
+          - ''
+          - ''
