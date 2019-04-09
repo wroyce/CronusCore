@@ -29,19 +29,19 @@ public class WarpListener implements Listener {
         if (e.getClickedInventory().getName().equalsIgnoreCase(Color.toColor(CommandWarp.title))) {
             e.setCancelled(true);
         }
-        if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(Color.toColor("&bCrates"))) {
+        if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(Color.toColor(Core.getInstance().getConfig().getString("GUI.Warp.Items.Crates.Name")))) {
             Utilities.sendConsole(Core.getInstance().getConfig().getString("GUI.Warp.Items.Crates.Command")
                     .replace("%player%", player.getName()));
         }
-        if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(Color.toColor("&cNether"))) {
+        if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase((Color.toColor(Core.getInstance().getConfig().getString("GUI.Warp.Items.Nether.Name"))))) {
             Utilities.sendConsole(Core.getInstance().getConfig().getString("GUI.Warp.Items.Nether.Command")
                     .replace("%player%", player.getName()));
         }
-        if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(Color.toColor("&eEnd"))) {
+        if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase((Color.toColor(Core.getInstance().getConfig().getString("GUI.Warp.Items.End.Name"))))) {
             Utilities.sendConsole(Core.getInstance().getConfig().getString("GUI.Warp.Items.End.Command")
                     .replace("%player%", player.getName()));
         }
-        if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(Color.toColor("&2Wastelands"))) {
+        if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase((Color.toColor(Core.getInstance().getConfig().getString("GUI.Warp.Items.Wastelands.Name"))))) {
             Utilities.sendConsole(Core.getInstance().getConfig().getString("GUI.Warp.Items.Wastelands.Command")
                     .replace("%player%", player.getName()));
         }
