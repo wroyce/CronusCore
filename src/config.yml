@@ -66,6 +66,9 @@ GUI:
       Nether:
         Name: "&cNether"
         Command: "sudo %player% ewarp nether"
+        Lore:
+          - "&b"
+          - ""
         Slot: 11
       Wastelands:
         Name: "&2Wastelands"
@@ -79,50 +82,3 @@ GUI:
         Name: "&bCrates"
         Command: "sudo %player% ewarp crates"
         Slot: 30
-
-  Kits:
-    Shazam:
-      Name: "&bShazam"
-      Slot: 0
-      Locked-Lore:
-        - ''
-        - ''
-      Unlocked:
-        - ''
-        - ''
-    Jafar:
-      Name: "&eJafar"
-      Slot: 1
-      Locked-Lore:
-        - ''
-        - ''
-        Unlocked:
-          - ''
-          - ''
-    Sauron:
-      Name: "&aSauron"
-      Slot: 2
-      Locked-Lore:
-        - ''
-        - ''
-        Unlocked:
-          - ''
-          - ''
-    Merlin:
-      name: "&cMerlin"
-      Slot: 3
-      Locked-Lore:
-        - ''
-        - ''
-        Unlocked:
-          - ''
-          - ''
-    Gandalf:
-      Name: "&6Gandalf"
-      Slot: 4
-      Locked-Lore:
-        - ''
-        - ''
-        Unlocked:
-          - ''
-          - ''

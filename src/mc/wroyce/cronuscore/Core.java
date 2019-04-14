@@ -62,7 +62,8 @@ public class Core extends JavaPlugin {
                 new CommandChats(),
                 new WitherRaiding(),
                 new uuid(),
-                new WarpListener()
+                new WarpListener(),
+                new BlacklistedBlocks()
         };
         for (Listener listener : listeners) {
             getServer().getPluginManager().registerEvents(listener, this);
