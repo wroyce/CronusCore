@@ -2,7 +2,7 @@ name: CronusCore
 version: 1.0
 description: Dedicated core for CronusPvP
 main: mc.wroyce.cronuscore.Core
-author: wroyce
+authors: [wroyce, driftay]
 
 commands:
   cronuscore:
@@ -20,3 +20,9 @@ permissions:
   cronuscore.warp:
     default: op
     description: Permission to use the warp gui
+  cronuscore.chatfilter.bypass:
+    default: op
+    description: Permission to opt out of the chatfilter
+  cronuscore.antitntdamage:
+    default: op
+    description: Permission to opt out of getting damaged by TNT

@@ -20,15 +20,6 @@ public class BlacklistedBlocks implements Listener {
     }
 
     @EventHandler
-    public void onBoatPlacement (BlockPlaceEvent e) {
-        Player player = e.getPlayer();
-        if (e.getBlockPlaced().getType().equals(Material.BOAT) && !player.isOp()) {
-            player.sendMessage(color("&c&l[!] You are not allowed to place boats as a non-op."));
-            e.setCancelled(true);
-        }
-    }
-
-    @EventHandler
     public void onBarrierPlacement (BlockPlaceEvent e) {
         Player player = e.getPlayer();
         if (e.getBlockPlaced().getType().equals(Material.BARRIER) && !player.isOp()) {

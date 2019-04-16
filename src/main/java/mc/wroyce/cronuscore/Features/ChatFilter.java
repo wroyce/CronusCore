@@ -21,7 +21,7 @@ public class ChatFilter implements Listener {
         String message = e.getMessage();
 
         boolean sendWarning = false;
-        boolean bypassPerm = p.hasPermission(config.getString("ChatFilter.bypass-permission"));
+        boolean bypassPerm = p.hasPermission(config.getString("cronuscore.chatfilter.bypass"));
 
         char star = config.getString("Replace-Symbol").charAt(0);
         Iterator<String> stuff = config.getStringList("Muted-Words").iterator();
