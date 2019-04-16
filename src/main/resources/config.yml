@@ -58,6 +58,31 @@ UUID:
   Self: '&cYour UUID: &8%UUID%'
   Target: "&c%Target%'s UUID: &8%TargetUUID%"
 
+
+Spawners:
+  radius-check: 90
+
+#CHAT FILTER
+ChatFilter:
+  bypass-permission: 'chatfilter.bypass'
+  Message1: '&c&lVexMC &8» &bWe''ve noticed you''re using &6Profane Language &ba lot. Please keep it to a minimum.'
+#Example: Hello will be replaced with ****
+Replace-Symbol: '*'
+#You can continue this list as long as you want just copy my examples above
+# NOTE: I do find these words HIGHLY OFFENSIVE and Recommend you keep them
+Muted-Words:
+  - 'nigger'
+  - 'beaner'
+  - 'n1gger'
+  - 'nibba'
+  - 'fuck'
+  - 'bitch'
+  - 'cunt'
+  - 'slut'
+  - 'whore'
+  - 'ass'
+  - 'asshole'
+
 GUI:
   Warp:
     Title: "&6Warp List"

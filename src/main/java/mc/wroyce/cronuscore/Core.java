@@ -7,6 +7,7 @@ import mc.wroyce.cronuscore.Commands.CommandWarp;
 import mc.wroyce.cronuscore.Commands.uuid;
 import mc.wroyce.cronuscore.Features.*;
 import mc.wroyce.cronuscore.Listeners.WarpListener;
+import mc.wroyce.cronuscore.premium.AntiTNTDamage;
 import net.milkbowl.vault.economy.Economy;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.Plugin;
@@ -56,6 +57,10 @@ public class Core extends JavaPlugin {
     public void registerListeners() {
         Listener[] listeners = {
                 new NetherWater(),
+                new ChatFilter(),
+                new FlyListener(),
+                new AntiMineSpawner(),
+                new AntiTNTDamage(),
                 new Sponge(),
                 new BlockedEnchants(),
                 new FactionAlerts(),
@@ -93,7 +98,7 @@ public class Core extends JavaPlugin {
         if (rsp == null) {
             return false;
         }
-        this.econ = ((Economy)rsp.getProvider());
+        this.econ = rsp.getProvider();
         return this.econ != null;
     }
 }

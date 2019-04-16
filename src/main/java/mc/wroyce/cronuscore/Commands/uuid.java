@@ -2,13 +2,15 @@ package mc.wroyce.cronuscore.Commands;
 
 
 import mc.wroyce.cronuscore.Core;
-import mc.wroyce.cronuscore.Util.Color;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Listener;
+
+import static mc.wroyce.cronuscore.Util.Util.color;
+import static mc.wroyce.cronuscore.Util.Util.config;
 
 public class uuid implements CommandExecutor, Listener
 {
@@ -35,7 +37,7 @@ public class uuid implements CommandExecutor, Listener
             sender.sendMessage("§c" + targetName + "'s §7UUID: §c" + target.getUniqueId());
         }
         else {
-            sender.sendMessage(Color.toColor(Core.getInstance().getConfig().getString("No-Permission")));
+            sender.sendMessage(color(config.getString("No-Permission")));
         }
         return false;
     }

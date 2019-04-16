@@ -12,8 +12,10 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockFromToEvent;
 import org.bukkit.event.block.BlockPlaceEvent;
 
+import static mc.wroyce.cronuscore.Util.Util.config;
+
 public class Sponge implements Listener {
-    double radius = Core.getInstance().getConfig().getDouble("sponge-radius") / 2.0D;
+    double radius = config.getDouble("sponge-radius") / 2.0D;
 
     @EventHandler(priority=EventPriority.HIGHEST)
     public void spongePlace(BlockPlaceEvent e) {

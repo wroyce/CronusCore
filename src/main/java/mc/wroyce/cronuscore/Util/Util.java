@@ -1,11 +1,15 @@
 package mc.wroyce.cronuscore.Util;
 
+import mc.wroyce.cronuscore.Core;
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
+import org.bukkit.configuration.file.FileConfiguration;
 
-import static mc.wroyce.cronuscore.Util.Color.toColor;
+public class Util {
 
-public class Utilities {
+
+    public static FileConfiguration config = Core.getInstance().getConfig();
 
     public static void sendConsole(String command) {
         Bukkit.dispatchCommand(Bukkit.getServer().getConsoleSender(), command);
@@ -13,11 +17,15 @@ public class Utilities {
 
     public static void log(String message) {
         CommandSender sender = Bukkit.getConsoleSender();
-        sender.sendMessage(toColor(message));
+        sender.sendMessage(color(message));
+    }
+
+    public static String color(String message){
+        return ChatColor.translateAlternateColorCodes('&', message);
     }
 
     public static void sendMessage(String message, CommandSender sender) {
-        sender.sendMessage(toColor(message));
+        sender.sendMessage(color(message));
     }
 
     public static void SendMainframeMessage(String message, CommandSender player) {

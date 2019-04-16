@@ -1,10 +1,12 @@
 package mc.wroyce.cronuscore.Commands;
 
 import mc.wroyce.cronuscore.Core;
-import mc.wroyce.cronuscore.Util.Color;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
+
+import static mc.wroyce.cronuscore.Util.Util.color;
+import static mc.wroyce.cronuscore.Util.Util.config;
 
 public class CommandReload implements CommandExecutor {
 
@@ -13,13 +15,13 @@ public class CommandReload implements CommandExecutor {
         if (cmd.getName().equalsIgnoreCase("cronuscore")) {
             try {
                 if (!(args.length == 1)) {
-                    sender.sendMessage(Color.toColor("&cInvalid args. use /cronuscore reload"));
+                    sender.sendMessage(color("&cInvalid args. use /cronuscore reload"));
                 }
                 if (args[0].equalsIgnoreCase("reload") && sender.hasPermission("cronuscore.admin")) {
                     Core.getInstance().reloadConfig();
-                    sender.sendMessage(Color.toColor(Core.getInstance().getConfig().getString("Reload")));
+                    sender.sendMessage(color(config.getString("Reload")));
                 } else {
-                    sender.sendMessage(Color.toColor(Core.getInstance().getConfig().getString("No-Permission")));
+                    sender.sendMessage(color(config.getString("No-Permission")));
                 }
             } catch (IndexOutOfBoundsException ex) {
             }

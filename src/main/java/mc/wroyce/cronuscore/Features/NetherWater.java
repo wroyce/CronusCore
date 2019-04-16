@@ -14,6 +14,8 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 
+import static mc.wroyce.cronuscore.Util.Util.config;
+
 public class NetherWater implements Listener {
     private static List<String> disabledWorlds = new ArrayList();
 
@@ -25,7 +27,7 @@ public class NetherWater implements Listener {
     }
 
     public List<String> getDisabledWorlds() {
-        disabledWorlds = Core.getInstance().getConfig().getStringList("Nether-Water-disabled");
+        disabledWorlds = config.getStringList("Nether-Water-disabled");
         return disabledWorlds;
     }
 
