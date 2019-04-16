@@ -12,6 +12,7 @@ import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 
 public class FactionAlerts implements Listener {
+
     @EventHandler
     public void facMemberLeaves(PlayerQuitEvent e) {
         Faction fac = null;
