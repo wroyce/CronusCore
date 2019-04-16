@@ -92,18 +92,23 @@ GUI:
         Name: "&cNether"
         Command: "sudo %player% ewarp nether"
         Lore:
-          - "&b"
           - ""
         Slot: 11
       Wastelands:
         Name: "&2Wastelands"
         Command: "sudo %player% ewarp wastelands"
         Slot: 13
+        Lore:
+          - ""
       End:
         Name: "&eEnd"
         Command: "sudo %player% ewarp end"
         Slot: 15
+        Lore:
+          - ""
       Crates:
         Name: "&bCrates"
         Command: "sudo %player% ewarp crates"
         Slot: 30
+        Lore:
+          - ""

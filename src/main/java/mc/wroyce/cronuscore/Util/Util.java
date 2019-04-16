@@ -6,6 +6,9 @@ import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.FileConfiguration;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Util {
 
 
@@ -22,6 +25,12 @@ public class Util {
 
     public static String color(String message){
         return ChatColor.translateAlternateColorCodes('&', message);
+    }
+
+    public static List<String> colorList (List<String> input) {
+        List<String> ret = new ArrayList<String>();
+        for (String line : input) ret.add(ChatColor.translateAlternateColorCodes('&', line));
+        return ret;
     }
 
     public static void sendMessage(String message, CommandSender sender) {
