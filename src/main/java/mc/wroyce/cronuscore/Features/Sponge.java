@@ -1,8 +1,7 @@
-package mc.wroyce.cronuscore.Features;
+package main.java.mc.wroyce.cronuscore.Features;
 
 import com.massivecraft.factions.FPlayer;
 import com.massivecraft.factions.FPlayers;
-import mc.wroyce.cronuscore.Core;
 import org.bukkit.Material;
 import org.bukkit.World;
 import org.bukkit.block.Block;
@@ -12,7 +11,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockFromToEvent;
 import org.bukkit.event.block.BlockPlaceEvent;
 
-import static mc.wroyce.cronuscore.Util.Util.config;
+import static main.java.mc.wroyce.cronuscore.Util.Util.config;
 
 public class Sponge implements Listener {
     double radius = config.getDouble("sponge-radius") / 2.0D;

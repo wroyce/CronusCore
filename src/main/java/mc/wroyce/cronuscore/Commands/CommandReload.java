@@ -1,12 +1,12 @@
-package mc.wroyce.cronuscore.Commands;
+package main.java.mc.wroyce.cronuscore.Commands;
 
-import mc.wroyce.cronuscore.Core;
+import main.java.mc.wroyce.cronuscore.Core;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 
-import static mc.wroyce.cronuscore.Util.Util.color;
-import static mc.wroyce.cronuscore.Util.Util.config;
+import static main.java.mc.wroyce.cronuscore.Util.Util.color;
+import static main.java.mc.wroyce.cronuscore.Util.Util.config;
 
 public class CommandReload implements CommandExecutor {
 

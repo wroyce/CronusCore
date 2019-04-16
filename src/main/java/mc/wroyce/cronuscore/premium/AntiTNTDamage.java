@@ -1,4 +1,4 @@
-package mc.wroyce.cronuscore.premium;
+package main.java.mc.wroyce.cronuscore.premium;
 
 import org.bukkit.entity.Player;
 import org.bukkit.entity.TNTPrimed;

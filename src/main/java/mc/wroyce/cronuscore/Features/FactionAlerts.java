@@ -1,17 +1,16 @@
-package mc.wroyce.cronuscore.Features;
+package main.java.mc.wroyce.cronuscore.Features;
 
 import com.massivecraft.factions.FPlayer;
 import com.massivecraft.factions.FPlayers;
 import com.massivecraft.factions.Faction;
-import mc.wroyce.cronuscore.Core;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 
-import static mc.wroyce.cronuscore.Util.Util.color;
-import static mc.wroyce.cronuscore.Util.Util.config;
+import static main.java.mc.wroyce.cronuscore.Util.Util.color;
+import static main.java.mc.wroyce.cronuscore.Util.Util.config;
 
 public class FactionAlerts implements Listener {
 

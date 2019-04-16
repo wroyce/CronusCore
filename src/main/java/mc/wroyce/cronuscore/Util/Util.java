@@ -1,6 +1,6 @@
-package mc.wroyce.cronuscore.Util;
+package main.java.mc.wroyce.cronuscore.Util;
 
-import mc.wroyce.cronuscore.Core;
+import main.java.mc.wroyce.cronuscore.Core;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;

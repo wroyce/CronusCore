@@ -1,14 +1,14 @@
-package mc.wroyce.cronuscore.Listeners;
+package main.java.mc.wroyce.cronuscore.Listeners;
 
-import mc.wroyce.cronuscore.Commands.CommandWarp;
-import mc.wroyce.cronuscore.Core;
-import mc.wroyce.cronuscore.Util.Util;
+import main.java.mc.wroyce.cronuscore.Commands.CommandWarp;
+import main.java.mc.wroyce.cronuscore.Core;
+import main.java.mc.wroyce.cronuscore.Util.Util;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
 
-import static mc.wroyce.cronuscore.Util.Util.color;
+import static main.java.mc.wroyce.cronuscore.Util.Util.color;
 
 public class WarpListener implements Listener {
 

@@ -1,14 +1,13 @@
-package mc.wroyce.cronuscore.Features;
+package main.java.mc.wroyce.cronuscore.Features;
 
 import java.util.Map;
 
-import mc.wroyce.cronuscore.Core;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.enchantment.EnchantItemEvent;
 
-import static  mc.wroyce.cronuscore.Util.Util.config;
+import static  main.java.mc.wroyce.cronuscore.Util.Util.config;
 
 public class BlockedEnchants implements Listener {
 

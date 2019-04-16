@@ -1,4 +1,4 @@
-package mc.wroyce.cronuscore.Util;
+package main.java.mc.wroyce.cronuscore.Util;
 
 import java.util.ArrayList;
 import java.util.Arrays;

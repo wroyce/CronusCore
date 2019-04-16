@@ -1,9 +1,9 @@
-package mc.wroyce.cronuscore.Features;
+package main.java.mc.wroyce.cronuscore.Features;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import mc.wroyce.cronuscore.Core;
+import main.java.mc.wroyce.cronuscore.Core;
 import org.bukkit.Material;
 import org.bukkit.World;
 import org.bukkit.block.Block;
@@ -14,7 +14,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 
-import static mc.wroyce.cronuscore.Util.Util.config;
+import static main.java.mc.wroyce.cronuscore.Util.Util.config;
 
 public class NetherWater implements Listener {
     private static List<String> disabledWorlds = new ArrayList();
