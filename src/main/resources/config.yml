@@ -60,11 +60,12 @@ UUID:
 
 Spawners:
   radius-check: 90
+  alert-message: "&c&l[!] &cYou cannot mine spawners with enemies nearby!"
 
 #CHAT FILTER
 ChatFilter:
   bypass-permission: 'chatfilter.bypass'
-  Message1: "&c&lVexMC &8» &bWe've noticed you''re using &6Profane Language &ba lot. Please keep it to a minimum."
+  Message1: "&8» &bWe've noticed you''re using &6Profane Language &ba lot. Please keep it to a minimum."
 
 #Example: Hello will be replaced with ****
 Replace-Symbol: '*'

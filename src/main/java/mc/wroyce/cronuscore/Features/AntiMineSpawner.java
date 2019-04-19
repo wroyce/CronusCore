@@ -43,7 +43,8 @@ public class AntiMineSpawner implements Listener {
             double distZ = Math.abs(loc.getZ() - enemyLoc.getZ());
             int radius = config.getInt("Spawners.radius-check");
             if (distX <= radius && distZ <= radius) {
-                player.sendMessage(color("&c&l[!] &cYou cannot mine spawners with enemies nearby!"));
+                //player.sendMessage(color("&c&l[!] &cYou cannot mine spawners with enemies nearby!"));
+                player.sendMessage(color(config.getString("Spawners.alert-message")));
                 return true;
             }
         }
