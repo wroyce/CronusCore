@@ -10,7 +10,7 @@ import org.bukkit.event.entity.EntityDamageByEntityEvent;
 public class AntiTNTDamage implements Listener {
 
     @EventHandler
-    public void onPlayerTntDamage(EntityDamageByEntityEvent e) {
+    public void onPlayerDamage (EntityDamageByEntityEvent e) {
         if (e.getEntity() instanceof Player && e.getDamager() instanceof TNTPrimed) {
             Player p = (Player) e.getEntity();
             if(p.hasPermission("cronuscore.antitntdamage")) {
