@@ -26,3 +26,6 @@ permissions:
   cronuscore.antitntdamage:
     default: op
     description: Permission to opt out of getting damaged by TNT
+  cronuscore.anticreeperdamage:
+    default: op
+    description: Permission to opt out of getting damaged by creepers
