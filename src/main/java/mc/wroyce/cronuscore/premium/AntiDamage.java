@@ -7,7 +7,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 
-public class AntiTNTDamage implements Listener {
+public class AntiDamage implements Listener {
 
     @EventHandler
     public void onPlayerDamage (EntityDamageByEntityEvent e) {

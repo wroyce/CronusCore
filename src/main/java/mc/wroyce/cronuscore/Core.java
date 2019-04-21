@@ -7,7 +7,7 @@ import main.java.mc.wroyce.cronuscore.Commands.CommandReload;
 import main.java.mc.wroyce.cronuscore.Commands.CommandWarp;
 import main.java.mc.wroyce.cronuscore.Commands.uuid;
 import main.java.mc.wroyce.cronuscore.Listeners.WarpListener;
-import main.java.mc.wroyce.cronuscore.premium.AntiTNTDamage;
+import main.java.mc.wroyce.cronuscore.premium.AntiDamage;
 import net.milkbowl.vault.economy.Economy;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.Plugin;
@@ -60,7 +60,7 @@ public class Core extends JavaPlugin {
                 new ChatFilter(),
                 new FlyListener(),
                 new AntiMineSpawner(),
-                new AntiTNTDamage(),
+                new AntiDamage(),
                 new Sponge(),
                 new BlockedEnchants(),
                 new FactionAlerts(),
