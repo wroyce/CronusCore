@@ -22,7 +22,7 @@ public class CommandLastInv implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command cmd, String s, String[] args) {
         if (sender instanceof Player) {
             final Player p = (Player) sender;
-            if (cmd.getName().equalsIgnoreCase("lastinv")) {
+            if (cmd.getName().equalsIgnoreCase("lastinv") && p.hasPermission("cronuscore.lastinv")) {
                 int length = args.length;
                 if (length == 0) {
                     p.sendMessage(color("&c[!] &c/Lastinv <player>"));

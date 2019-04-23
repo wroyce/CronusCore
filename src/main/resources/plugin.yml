@@ -36,4 +36,4 @@ permissions:
     description: Permission to opt out of being demoted via /degrant
   cronuscore.lastinv:
     default: op
-    description: Permission to restore a players inventory that's stored on each PVP Death
+    description: Permission to restore a players inventory
