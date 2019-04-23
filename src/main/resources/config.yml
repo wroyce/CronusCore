@@ -19,6 +19,12 @@ reload: true
 uuid: true
 FactionAlerts: true
 
+# LastInv Messages
+PlayerNotFound: "&c[!] target not found."
+PlayerRestored: "&a[!] Restored inventory for &7%Target%&a."
+TargetRestored: "&a[!] You got your inventory fully restored."
+UnableToRestore: "&c[!] An error occurred trying to restore this inventory."
+
 # Sent to players who use /cc reload
 Reload: '&a[!] Configuration reloaded.'
 
@@ -113,3 +119,35 @@ GUI:
         Slot: 30
         Lore:
           - ""
+
+Grant-And-Degrant:
+  prefix: ""
+
+  Groups:
+    - Owner
+    - Developer
+    - Manager
+    - Admin
+
+  Messages:
+    cant-demote: ""
+    notEnoughArgs: ""
+    grant-player-group: ""
+    grant-player-permission: ""
+    grant-group-permission: ""
+    grant-player-suffix: ""
+    grant-player-prefix: ""
+    degrant-player-group: ""
+    degrant-player-permission: ""
+
+  Grant-Commands:
+    suffix: ""
+    prefix: ""
+    group: ""
+    group-permission: ""
+    permission: ""
+
+  Degrant-Commands:
+    group: ""
+    group-permission: ""
+    permission: ""

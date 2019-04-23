@@ -12,6 +12,8 @@ commands:
     permission: cronuscore.admin
   warp:
     permission: cronuscore.warp
+  lastinv:
+    permission: cronuscore.lastinv
 
 permissions:
   cronuscore.admin:
@@ -29,3 +31,9 @@ permissions:
   cronuscore.anticreeperdamage:
     default: op
     description: Permission to opt out of getting damaged by creepers
+  cronuscore.cant-demote:
+    default: false
+    description: Permission to opt out of being demoted via /degrant
+  cronuscore.lastinv:
+    default: op
+    description: Permission to restore a players inventory that's stored on each PVP Death
