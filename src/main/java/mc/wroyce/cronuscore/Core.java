@@ -64,7 +64,6 @@ public class Core extends JavaPlugin {
     public void registerListeners() {
         Listener[] listeners = {
                 new NetherWater(),
-                new ChatFilter(),
                 new FlyListener(),
                 new AntiMineSpawner(),
                 new AntiDamage(),
@@ -76,7 +75,8 @@ public class Core extends JavaPlugin {
                 new uuid(),
                 new WarpListener(),
                 new BlacklistedBlocks(),
-                new DeathListener(this)
+                new DeathListener(this),
+                new Beta()
         };
         for (Listener listener : listeners) {
             getServer().getPluginManager().registerEvents(listener, this);
@@ -88,6 +88,8 @@ public class Core extends JavaPlugin {
         getCommand("uuid").setExecutor(new uuid());
         getCommand("warp").setExecutor(new CommandWarp());
         getCommand("lastinv").setExecutor(new CommandLastInv(this));
+        getCommand("list").setExecutor(new CommandList());
+        getCommand("ping").setExecutor(new CommandPing());
     }
 
     private WorldGuardPlugin getWorldGuard() {

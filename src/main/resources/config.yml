@@ -19,6 +19,19 @@ reload: true
 uuid: true
 FactionAlerts: true
 
+# Beta Settings - You will need to reset playerdata for welcome and rewards
+Beta:
+  enabled: true
+  welcome:
+    - "&cWelcome to the beta &e%Player%"
+    - "test2"
+  welcome-back:
+    - "&cWelcome back to the beta &e%Player%"
+    - "test"
+  rewards:
+    - "broadcast &b%Player% &7Has joined the beta!"
+    - "gamemode c %Player%"
+
 # LastInv Messages
 PlayerNotFound: "&c[!] target not found."
 PlayerRestored: "&a[!] Restored inventory for &7%Target%&a."

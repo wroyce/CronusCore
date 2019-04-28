@@ -14,6 +14,10 @@ commands:
     permission: cronuscore.warp
   lastinv:
     permission: cronuscore.lastinv
+  list:
+    permission: cronuscore.list
+  ping:
+    permission: cronuscore.ping
 
 permissions:
   cronuscore.admin:
@@ -37,3 +41,15 @@ permissions:
   cronuscore.lastinv:
     default: op
     description: Permission to restore a players inventory
+  cronuscore.list:
+    default: true
+    description: Permission to view /list
+  cronuscore.list.staff:
+    default: false
+    description: Permissiion to show up as a staff in /list
+  cronuscore.list.donator:
+    default: false
+    description: Permission to show up as a donator in /list
+  cronuscore.ping:
+    default: op
+    description: Permission to use /ping

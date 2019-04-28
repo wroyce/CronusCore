@@ -35,18 +35,22 @@ public class WarpListener implements Listener {
             if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(color(Core.getInstance().getConfig().getString("GUI.Warp.Items.Crates.Name")))) {
                 Util.sendConsole(Core.getInstance().getConfig().getString("GUI.Warp.Items.Crates.Command")
                         .replace("%player%", player.getName()));
+                player.closeInventory();
             }
             if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase((color(Core.getInstance().getConfig().getString("GUI.Warp.Items.Nether.Name"))))) {
                 Util.sendConsole(Core.getInstance().getConfig().getString("GUI.Warp.Items.Nether.Command")
                         .replace("%player%", player.getName()));
+                player.closeInventory();
             }
             if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase((color(Core.getInstance().getConfig().getString("GUI.Warp.Items.End.Name"))))) {
                 Util.sendConsole(Core.getInstance().getConfig().getString("GUI.Warp.Items.End.Command")
                         .replace("%player%", player.getName()));
+                player.closeInventory();
             }
             if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase((color(Core.getInstance().getConfig().getString("GUI.Warp.Items.Wastelands.Name"))))) {
                 Util.sendConsole(Core.getInstance().getConfig().getString("GUI.Warp.Items.Wastelands.Command")
                         .replace("%player%", player.getName()));
+                player.closeInventory();
             }
         } catch (NullPointerException exception) {
             return;
