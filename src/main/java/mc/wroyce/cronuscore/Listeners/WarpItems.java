@@ -3,6 +3,7 @@ package main.java.mc.wroyce.cronuscore.Listeners;
 import main.java.mc.wroyce.cronuscore.Core;
 import main.java.mc.wroyce.cronuscore.Util.ItemBuilder;
 import org.bukkit.Material;
+import org.bukkit.enchantments.Enchantment;
 import org.bukkit.inventory.ItemStack;
 
 import static main.java.mc.wroyce.cronuscore.Util.Util.*;

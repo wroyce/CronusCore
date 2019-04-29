@@ -9,6 +9,7 @@ import org.bukkit.Color;
 import org.bukkit.DyeColor;
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
+import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.inventory.meta.LeatherArmorMeta;
@@ -46,6 +47,23 @@ public class ItemBuilder {
     public ItemBuilder setName(String name){
         ItemMeta im = is.getItemMeta();
         im.setDisplayName(name);
+        is.setItemMeta(im);
+        return this;
+    }
+
+    // You will need to use .addUnsafeEnchantment for this to work
+    // Setting the item as enchanted, then hiding it via .setGlowing(true);
+    public ItemBuilder setGlowing (boolean status) {
+        ItemMeta im = is.getItemMeta();
+        im.addItemFlags(ItemFlag.HIDE_ENCHANTS);
+        is.setItemMeta(im);
+        return this;
+    }
+
+    public ItemBuilder setUnbreakable (boolean status) {
+        ItemMeta im = is.getItemMeta();
+        im.spigot().setUnbreakable(true);
+        im.addItemFlags(ItemFlag.HIDE_UNBREAKABLE);
         is.setItemMeta(im);
         return this;
     }
