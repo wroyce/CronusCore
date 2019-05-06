@@ -8,16 +8,22 @@ commands:
   cronuscore:
     permission: cronuscore.admin
     aliases: [ccore, cc]
+    description: Allows the admin to reload the configuration
   uuid:
     permission: cronuscore.admin
+    description: Allows the user to check UUIDs of other players
   warp:
     permission: cronuscore.warp
+    description: Allows the user to use /warp
   lastinv:
     permission: cronuscore.lastinv
+    description: Allows the user to restore inventories upon pvp via /lastinv
   list:
     permission: cronuscore.list
+    description: Allows the user to use /list
   ping:
     permission: cronuscore.ping
+    description: Allows the user to use /ping
 
 permissions:
   cronuscore.admin:
@@ -50,6 +56,15 @@ permissions:
   cronuscore.list.donator:
     default: false
     description: Permission to show up as a donator in /list
+  cronuscore.list.youtube:
+    default: false
+    description: Permission to show up as a youtuber in /list
+  cronuscore.list.partner:
+    default: false
+    description: Permission to show up as a partner in /list
+  cronuscore.list.hidden:
+    default: op
+    description: Permission to view /list hidden
   cronuscore.ping:
     default: op
     description: Permission to use /ping
