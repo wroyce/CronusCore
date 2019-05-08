@@ -32,12 +32,12 @@ public class CommandList implements CommandExecutor {
 
     public CommandList() {
         this.line = color("&6&m&l---------------------------------------------");
-        this.all = color("&cConnected players: &4");
-        this.donators = color("&cConnected donators: &4");
-        this.staff = color("&cConnected staff: &4");
-        this.youtube = color("&cConnected YouTubers: &4");
-        this.partner = color("&cConnected Partners: &4");
-        this.hidden = color("&cHidden players: &4");
+        this.all = color("&3Connected players: &b");
+        this.donators = color("&3Connected donators: &b");
+        this.staff = color("&3Connected staff: &b");
+        this.youtube = color("&3Connected YouTubers: &b");
+        this.partner = color("&3Connected Partners: &b");
+        this.hidden = color("&3Hidden players: &b");
     }
 
     public boolean onCommand(final CommandSender sender, final Command command, final String label, final String[] args) {
@@ -117,7 +117,7 @@ public class CommandList implements CommandExecutor {
     }
 
     private String countSentence(final int number, final String type, final String typePlural) {
-        return color("&cThere " + ((number == 1) ? "is " : "are ") + "&4" + number + "&c " + ((number == 1) ? type : typePlural)) + " online";
+        return color("&3There " + ((number == 1) ? "is " : "are ") + "&f" + number + "&b " + ((number == 1) ? type : typePlural)) + " online";
     }
 
     private String implode(final Collection<String> strs) {

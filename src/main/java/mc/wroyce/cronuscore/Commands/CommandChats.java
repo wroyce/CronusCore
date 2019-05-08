@@ -9,8 +9,7 @@ import java.util.List;
 import static main.java.mc.wroyce.cronuscore.Util.Util.color;
 import static main.java.mc.wroyce.cronuscore.Util.Util.config;
 
-public class CommandChats implements Listener
-{
+public class CommandChats implements Listener {
     @EventHandler
     public void onChatEvent(PlayerCommandPreprocessEvent e) {
         String message = e.getMessage();

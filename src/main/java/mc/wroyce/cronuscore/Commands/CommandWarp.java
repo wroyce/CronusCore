@@ -44,7 +44,6 @@ public class CommandWarp implements CommandExecutor {
             inventory.setItem(WastelandsSlot, WarpItems.Wastelands);
             inventory.setItem(CrateSlot, WarpItems.CrateWarp);
             inventory.setItem(32, WarpItems.Soon);
-
         }
         return true;
     }
