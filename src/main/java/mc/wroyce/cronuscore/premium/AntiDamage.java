@@ -1,4 +1,4 @@
-package main.java.mc.wroyce.cronuscore.premium;
+package mc.wroyce.cronuscore.premium;
 
 import org.bukkit.entity.Creeper;
 import org.bukkit.entity.Player;

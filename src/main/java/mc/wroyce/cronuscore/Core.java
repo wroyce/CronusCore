@@ -1,11 +1,11 @@
-package main.java.mc.wroyce.cronuscore;
+package mc.wroyce.cronuscore;
 
 import com.sk89q.worldguard.bukkit.WorldGuardPlugin;
-import main.java.mc.wroyce.cronuscore.Commands.*;
-import main.java.mc.wroyce.cronuscore.Features.*;
-import main.java.mc.wroyce.cronuscore.Listeners.DeathListener;
-import main.java.mc.wroyce.cronuscore.Listeners.WarpListener;
-import main.java.mc.wroyce.cronuscore.premium.AntiDamage;
+import mc.wroyce.cronuscore.Commands.*;
+import mc.wroyce.cronuscore.Features.*;
+import mc.wroyce.cronuscore.Listeners.DeathListener;
+import mc.wroyce.cronuscore.Listeners.WarpListener;
+import mc.wroyce.cronuscore.premium.AntiDamage;
 import net.milkbowl.vault.economy.Economy;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Listener;
@@ -22,9 +22,9 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class Core extends JavaPlugin {
-
     private static Core instance;
     private static Logger logger;
+
     public WorldGuardPlugin wg;
     public Economy econ = null;
     public Map<String, ItemStack[]> itemsMap = new HashMap<String, ItemStack[]>();

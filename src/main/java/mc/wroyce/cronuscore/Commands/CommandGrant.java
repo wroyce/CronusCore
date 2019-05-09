@@ -1,4 +1,4 @@
-package main.java.mc.wroyce.cronuscore.Commands;
+package mc.wroyce.cronuscore.Commands;
 
 public class CommandGrant {
 }

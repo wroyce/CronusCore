@@ -1,4 +1,4 @@
-package main.java.mc.wroyce.cronuscore.Commands;
+package mc.wroyce.cronuscore.Commands;
 
 
 import org.bukkit.Bukkit;
@@ -8,11 +8,10 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Listener;
 
-import static main.java.mc.wroyce.cronuscore.Util.Util.color;
-import static main.java.mc.wroyce.cronuscore.Util.Util.config;
+import static mc.wroyce.cronuscore.Util.Util.color;
+import static mc.wroyce.cronuscore.Util.Util.config;
 
-public class uuid implements CommandExecutor, Listener
-{
+public class uuid implements CommandExecutor, Listener {
     public boolean onCommand(final CommandSender sender, final Command cmd, final String commandLabel, final String[] args) {
         if (!(sender instanceof Player)) {
             sender.sendMessage("§cCan only be used in-game");

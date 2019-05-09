@@ -1,4 +1,4 @@
-package main.java.mc.wroyce.cronuscore.Features;
+package mc.wroyce.cronuscore.Features;
 
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
@@ -8,7 +8,7 @@ import org.bukkit.event.player.AsyncPlayerChatEvent;
 
 import java.util.Iterator;
 
-import static main.java.mc.wroyce.cronuscore.Util.Util.config;
+import static mc.wroyce.cronuscore.Util.Util.config;
 
 public class ChatFilter implements Listener {
 

@@ -1,4 +1,4 @@
-package main.java.mc.wroyce.cronuscore.Features;
+package mc.wroyce.cronuscore.Features;
 
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -6,7 +6,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerMoveEvent;
 import org.bukkit.util.Vector;
 
-import static main.java.mc.wroyce.cronuscore.Util.Util.color;
+import static mc.wroyce.cronuscore.Util.Util.color;
 
 public class FlyListener implements Listener {
 

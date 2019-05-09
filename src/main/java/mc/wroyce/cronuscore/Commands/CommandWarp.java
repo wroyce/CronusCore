@@ -1,7 +1,7 @@
-package main.java.mc.wroyce.cronuscore.Commands;
+package mc.wroyce.cronuscore.Commands;
 
-import main.java.mc.wroyce.cronuscore.Listeners.WarpItems;
-import main.java.mc.wroyce.cronuscore.Util.ItemBuilder;
+import mc.wroyce.cronuscore.Listeners.WarpItems;
+import mc.wroyce.cronuscore.Util.ItemBuilder;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.command.Command;
@@ -11,8 +11,8 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 
-import static main.java.mc.wroyce.cronuscore.Util.Util.color;
-import static main.java.mc.wroyce.cronuscore.Util.Util.config;
+import static mc.wroyce.cronuscore.Util.Util.color;
+import static mc.wroyce.cronuscore.Util.Util.config;
 
 public class CommandWarp implements CommandExecutor {
 

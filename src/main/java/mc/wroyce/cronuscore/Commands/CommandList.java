@@ -1,4 +1,4 @@
-package main.java.mc.wroyce.cronuscore.Commands;
+package mc.wroyce.cronuscore.Commands;
 
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-import static main.java.mc.wroyce.cronuscore.Util.Util.color;
+import static mc.wroyce.cronuscore.Util.Util.color;
 
 public class CommandList implements CommandExecutor {
 

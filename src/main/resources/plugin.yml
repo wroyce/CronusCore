@@ -1,7 +1,7 @@
 name: CronusCore
-version: 1.0
+version: Beta-1.0
 description: Dedicated core for CronusPvP
-main: main.java.mc.wroyce.cronuscore.Core
+main: mc.wroyce.cronuscore.Core
 authors: [wroyce, driftay]
 
 commands:

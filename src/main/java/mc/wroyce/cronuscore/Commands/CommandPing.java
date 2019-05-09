@@ -1,4 +1,4 @@
-package main.java.mc.wroyce.cronuscore.Commands;
+package mc.wroyce.cronuscore.Commands;
 
 import main.java.mc.wroyce.cronuscore.Listeners.PingListener;
 import org.bukkit.Bukkit;
@@ -10,8 +10,8 @@ import org.bukkit.entity.Player;
 import java.util.HashMap;
 import java.util.Map;
 
-import static main.java.mc.wroyce.cronuscore.Util.Util.color;
-import static main.java.mc.wroyce.cronuscore.Util.Util.config;
+import static mc.wroyce.cronuscore.Util.Util.color;
+import static mc.wroyce.cronuscore.Util.Util.config;
 
 public class CommandPing implements CommandExecutor {
     public Map<String, String> oto;

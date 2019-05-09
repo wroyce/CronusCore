@@ -1,6 +1,6 @@
-package main.java.mc.wroyce.cronuscore.Listeners;
+package mc.wroyce.cronuscore.Listeners;
 
-import main.java.mc.wroyce.cronuscore.Core;
+import mc.wroyce.cronuscore.Core;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;

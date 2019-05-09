@@ -1,12 +1,11 @@
-package main.java.mc.wroyce.cronuscore.Listeners;
+package mc.wroyce.cronuscore.Listeners;
 
-import main.java.mc.wroyce.cronuscore.Core;
-import main.java.mc.wroyce.cronuscore.Util.ItemBuilder;
+import mc.wroyce.cronuscore.Core;
+import mc.wroyce.cronuscore.Util.ItemBuilder;
 import org.bukkit.Material;
-import org.bukkit.enchantments.Enchantment;
 import org.bukkit.inventory.ItemStack;
 
-import static main.java.mc.wroyce.cronuscore.Util.Util.*;
+import static mc.wroyce.cronuscore.Util.Util.*;
 
 
 public class WarpItems {

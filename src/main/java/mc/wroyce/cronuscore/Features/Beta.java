@@ -1,4 +1,4 @@
-package main.java.mc.wroyce.cronuscore.Features;
+package mc.wroyce.cronuscore.Features;
 
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
@@ -6,8 +6,8 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 
-import static main.java.mc.wroyce.cronuscore.Util.Util.color;
-import static main.java.mc.wroyce.cronuscore.Util.Util.config;
+import static mc.wroyce.cronuscore.Util.Util.color;
+import static mc.wroyce.cronuscore.Util.Util.config;
 
 public class Beta implements Listener {
 
